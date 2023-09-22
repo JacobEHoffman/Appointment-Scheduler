@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginMenuController">
+   <children>
+      <Label fx:id="userLabel" layoutX="41.0" layoutY="35.0" text="Username">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="passLabel" layoutX="43.0" layoutY="75.0" text="Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="userText" layoutX="151.0" layoutY="31.0" />
+      <TextField fx:id="passText" layoutX="151.0" layoutY="71.0" />
+      <Button fx:id="loginBtn" layoutX="225.0" layoutY="114.0" mnemonicParsing="false" onAction="#onActionLogin" text="Login" />
+      <Label fx:id="languageLabel" layoutX="41.0" layoutY="183.0" text="Language">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="languageID" layoutX="115.0" layoutY="183.0" text="language" />
+      <Label fx:id="tzLabel" layoutX="188.0" layoutY="183.0" text="Time Zone">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="timeZoneLabel" layoutX="280.0" layoutY="183.0" text="Location" />
+      <Button fx:id="exitBtn" layoutX="300.0" layoutY="114.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+   </children>
+</AnchorPane>

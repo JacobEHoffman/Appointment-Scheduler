@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addCustomerController">
+   <children>
+      <Label layoutX="37.0" layoutY="27.0" text="Customer ID" />
+      <Label layoutX="37.0" layoutY="67.0" text="Customer Name" />
+      <Label layoutX="37.0" layoutY="103.0" text="Address" />
+      <Label layoutX="37.0" layoutY="139.0" text="Postal Code" />
+      <Label layoutX="37.0" layoutY="176.0" text="Phone Number" />
+      <TextField disable="true" layoutX="151.0" layoutY="23.0" />
+      <TextField fx:id="addCName" layoutX="151.0" layoutY="63.0" />
+      <TextField fx:id="addCAddress" layoutX="151.0" layoutY="99.0" />
+      <TextField fx:id="addCPostal" layoutX="151.0" layoutY="135.0" />
+      <TextField fx:id="addCPhone" layoutX="151.0" layoutY="172.0" />
+      <Label layoutX="339.0" layoutY="219.0" text="State/Province" />
+      <Label layoutX="37.0" layoutY="219.0" text="Country" />
+      <ComboBox fx:id="addCCountry" layoutX="151.0" layoutY="215.0" onAction="#onActionSelectionMade" prefWidth="150.0" promptText="Select Country" />
+      <ComboBox fx:id="addCState" layoutX="436.0" layoutY="215.0" prefWidth="150.0" promptText="Select State/Province" />
+      <Button fx:id="addCConfirm" layoutX="378.0" layoutY="270.0" mnemonicParsing="false" onAction="#onActionConfirm" text="Confirm" />
+      <Button fx:id="addCExit" layoutX="466.0" layoutY="270.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+   </children>
+</AnchorPane>

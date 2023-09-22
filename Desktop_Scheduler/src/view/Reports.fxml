@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="569.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportsController">
+   <children>
+      <TabPane layoutX="67.0" layoutY="59.0" prefHeight="480.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Appointment Totals">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="303.0" prefWidth="637.0">
+                     <children>
+                        <TableView fx:id="appointmentsByTypeTableView" layoutX="139.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="reportTypeCol" prefWidth="100.0" text="Type" />
+                            <TableColumn fx:id="reportTypeTotalCol" prefWidth="99.0" text="Total" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="appointmentsByMonthTableView" layoutX="504.0" layoutY="110.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="reportMonthCol" prefWidth="100.0" text="Month" />
+                            <TableColumn fx:id="reportMonthTotalCol" prefWidth="99.0" text="Total" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="164.0" layoutY="74.0" text="Appointments By Type">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="521.0" layoutY="74.0" text="Appointments By Month ">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Contact Schedule">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="755.0">
+                     <children>
+                        <TableView fx:id="rContactScheduleTableView" layoutX="75.0" layoutY="101.0" prefHeight="250.0" prefWidth="700.0">
+                          <columns>
+                            <TableColumn fx:id="rAppointmentIDCol" prefWidth="96.0" text="Appointment ID" />
+                            <TableColumn fx:id="rTitleCol" prefWidth="65.0" text="Title" />
+                              <TableColumn fx:id="rTypeCol" prefWidth="64.0" text="Type" />
+                              <TableColumn fx:id="rDescriptionCol" prefWidth="139.0" text="Description" />
+                              <TableColumn fx:id="rStartCol" prefWidth="130.0" text="Start" />
+                              <TableColumn fx:id="rEndCol" prefWidth="130.0" text="End" />
+                              <TableColumn fx:id="rCustomerIDCol" prefWidth="75.0" text="Customer ID" />
+                          </columns>
+                        </TableView>
+                        <ComboBox fx:id="rContactCombobox" layoutX="75.0" layoutY="54.0" onAction="#onActionSelectContact" prefWidth="150.0" promptText="Select Contact" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Customers by District">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="customersByDistrictTableView" layoutX="325.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="reportDistrictCol" prefWidth="100.0" text="District" />
+                            <TableColumn fx:id="reportDistrictTotalCol" prefWidth="99.0" text="Total" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="354.0" layoutY="87.0" text="Customers By District">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+       <Button layoutX="791.0" layoutY="527.0" mnemonicParsing="false" onAction="#onActionMain" text="Main Menu" />
+      <Button layoutX="890.0" layoutY="527.0" mnemonicParsing="false" onAction="#onActionLogout" text="Logout" />
+   </children>
+</AnchorPane>

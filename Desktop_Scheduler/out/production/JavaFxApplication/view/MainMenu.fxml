@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <RadioButton fx:id="viewAllBtn" layoutX="423.0" layoutY="280.0" mnemonicParsing="false" onAction="#onActionViewAll" text="View All" />
+      <RadioButton fx:id="viewByMonth" layoutX="500.0" layoutY="280.0" mnemonicParsing="false" onAction="#onActionMonth" text="View By Month" />
+      <RadioButton fx:id="viewByWeek" layoutX="616.0" layoutY="280.0" mnemonicParsing="false" onAction="#onActionWeek" text="View By Week" />
+      <TableView fx:id="customerTableView" layoutX="14.0" layoutY="54.0" prefHeight="161.0" prefWidth="973.0">
+        <columns>
+          <TableColumn fx:id="cIDCol" text="ID" />
+          <TableColumn fx:id="cNameCol" prefWidth="164.0" text="Name" />
+            <TableColumn fx:id="cAddressCol" prefWidth="295.0" text="Address" />
+            <TableColumn fx:id="CPostalCol" prefWidth="134.0" text="Postal Code" />
+            <TableColumn fx:id="cPhoneCol" prefWidth="169.0" text="Phone Number" />
+            <TableColumn fx:id="cDivisionIDCol" prefWidth="130.0" text="Division ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="logoutBtn" layoutX="932.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionLogout" text="Logout" />
+      <Button fx:id="addA" layoutX="541.0" layoutY="510.0" mnemonicParsing="false" onAction="#onActionAddA" text="Add Appointment" />
+      <Button fx:id="updateA" layoutX="682.0" layoutY="510.0" mnemonicParsing="false" onAction="#onActionUpdateA" text="Update Appointment" />
+      <Button fx:id="deleteA" layoutX="835.0" layoutY="510.0" mnemonicParsing="false" onAction="#onActionDeleteA" text="Delete Appointment" />
+      <TableView fx:id="appointmentsTableView" layoutX="14.0" layoutY="305.0" prefHeight="193.0" prefWidth="973.0">
+        <columns>
+          <TableColumn fx:id="aIDCol" prefWidth="97.0" text="Appointment ID" />
+          <TableColumn fx:id="aTitleCol" prefWidth="76.0" text="Title" />
+            <TableColumn fx:id="aDescriptionCol" prefWidth="136.0" text="Description" />
+            <TableColumn fx:id="aLocationCol" minWidth="0.0" prefWidth="79.0" text="Location" />
+            <TableColumn fx:id="aContactCol" prefWidth="91.0" text="Contact" />
+            <TableColumn fx:id="aTypeCol" prefWidth="103.0" text="Type" />
+            <TableColumn fx:id="aStartCol" prefWidth="130.0" text="Start" />
+            <TableColumn fx:id="aEndCol" prefWidth="130.0" text="End" />
+            <TableColumn fx:id="aCustomerIDCol" prefWidth="78.0" text="Customer ID" />
+            <TableColumn fx:id="aUserIDCol" prefWidth="52.0" text="User ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="26.0" layoutY="28.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="280.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="addC" layoutX="541.0" layoutY="225.0" mnemonicParsing="false" onAction="#onActionAddC" text="Add Customer" />
+      <Button fx:id="updateC" layoutX="682.0" layoutY="225.0" mnemonicParsing="false" onAction="#onActionUpdateC" text="Update Customer" />
+      <Button fx:id="deleteC" layoutX="835.0" layoutY="225.0" mnemonicParsing="false" onAction="#onActionDeleteC" text="Delete Customer" />
+      <Button fx:id="reportsBtn" layoutX="26.0" layoutY="510.0" mnemonicParsing="false" onAction="#onActionReports" text="Reports" />
+   </children>
+</AnchorPane>
