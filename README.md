@@ -10,8 +10,11 @@ to create, update, and delete customer and appointments as well as view reports 
 
 # IDE and Java Modules Used
 IDE: IntelliJ Community 2021.1.3
+
 JDK: Java SE 17.0.7
+
 JavaFX: JavaFX-SDK-18.0.1
+
 MySQL Connector: mysql-connector-java-8.0.25
 
 # Run Directions 
