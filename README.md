@@ -14,6 +14,9 @@ JDK: Java SE 17.0.7
 JavaFX: JavaFX-SDK-18.0.1
 MySQL Connector: mysql-connector-java-8.0.25
 
-Run Directions: Run the Main.java file, this will give you access to the scenes that are included
+# Run Directions 
+-Create a mysql database using the dml and ddl files included
 
-Additional Report: A table displaying customer divisions and the total amount of each division instance
+-Run the Main.java file, this will give you access to the scenes that are included
+
+-Usernames and password credentials include: (test,test), (admin,admin)
